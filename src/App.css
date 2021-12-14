@@ -90,3 +90,40 @@ table {
     transform: rotate(360deg);
   }
 }
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.head {
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 1.8rem;
+}
+
+.head_child {
+  padding-left: 1.8rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.divider {
+  border-top: 1px solid gray;
+  padding : 0.2rem;
+}
+
+.write_inform {
+  display: flex;
+  padding: 0.5rem 0.5rem 0.5rem 1.8rem;
+}
+
+.inform_indicator {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  width: 250px;
+}
+
+.write_by_user {
+  text-align: center;
+}
