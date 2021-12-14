@@ -15,6 +15,7 @@ export default function Header () {
       align-items: center;
       color: #FAF9F8;
       padding-right: 10px;
+      font-weight: bold;
     }
   `
   
