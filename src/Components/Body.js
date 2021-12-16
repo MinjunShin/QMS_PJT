@@ -12,27 +12,36 @@ export default function Body() {
   const Body = styled.div`
     display: flex;
   `;
+
+  const Test = styled.div`
+    border: 2px solid gray;
+    flex: 9 0 0;
+    height: 100vh;
+  `;
+
   return (
     <BrowserRouter>
       <Body>
         <MainMenu />
-        <Switch>
-          <Route path exact="/">
-            <MainPage />
-          </Route>
-          <Route path="/write_quote">
-            <WriteQuote />
-          </Route>
-          <Route path="/find_quote">
-            <FindQuote />
-          </Route>
-          <Route path="/calc_price">
-            <CalcPrice />
-          </Route>
-          <Route path="/settings">
-            <Settings />
-          </Route>
-        </Switch>
+        <Test>
+          <Switch>
+            <Route path exact="/">
+              <MainPage />
+            </Route>
+            <Route path="/write_quote">
+              <WriteQuote />
+            </Route>
+            <Route path="/find_quote">
+              <FindQuote />
+            </Route>
+            <Route path="/calc_price">
+              <CalcPrice />
+            </Route>
+            <Route path="/settings">
+              <Settings />
+            </Route>
+          </Switch>
+        </Test>
       </Body>
     </BrowserRouter>
   );
