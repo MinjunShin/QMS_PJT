@@ -22,7 +22,6 @@ export default function MainMenu() {
       height: 10vh;
     }
   `;
-
   return (
     <MainMenu>
       <MainBtnContainer>
