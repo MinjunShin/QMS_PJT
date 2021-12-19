@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFile, faFileAlt, faCamera } from "@fortawesome/free-solid-svg-icons";
 
 export default function MainMenu() {
   const MainMenu = styled.div`
@@ -20,12 +22,19 @@ export default function MainMenu() {
       border: 2px solid white;
       color: #faf9f8;
       height: 10vh;
+
+      > .fas {
+        cursor: pointer;
+        color: white;
+        background-color: transparent;
+      }
     }
   `;
   return (
     <MainMenu>
       <MainBtnContainer>
         <div className="write_quote mainBtn">
+          <FontAwesomeIcon className="fas" icon={faFileAlt} />
           <Link to="/write_quote">견적서 작성</Link>
         </div>
         <div className="find_quote mainBtn">
