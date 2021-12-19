@@ -11,6 +11,7 @@ export default function FindQuote () {
   return (
     <FindQuote>
       This is Find quote page
+      <i className="far fa-comment-dots"></i>
     </FindQuote>
   )
 }
