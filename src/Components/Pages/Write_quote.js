@@ -49,7 +49,11 @@ export default function WriteQuote() {
           <div className="write_inform_innerHead">기본 사양</div>
           <div className="phase inputbox write_inform">
             <div className="inform_indicator">품목(Item type)</div>
-            <input type="text" className="write_by_user"></input>
+            <select className="select_item_type">
+              <option value="oil">유입</option>
+              <option value="dry">건식</option>
+              <option value="mold">몰드</option>
+            </select>
           </div>
           <div className="phase inputbox write_inform">
             <div className="inform_indicator">상수(Phase)</div>
